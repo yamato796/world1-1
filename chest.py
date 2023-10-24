@@ -35,15 +35,15 @@ while True:
 	if reset_flag == 1:
 		#print('reset')
 		if avg_flag == 0:
-			#with open('./count','r') as f:
-			#	index = int(f.readline())
-			#f.close()
-			#print_out(index)
+			with open('./count','r') as f:
+				index = int(f.readline())
+			f.close()
+			print_out(index)
 			print('print la')
 			index = index + 1 
-			#with open('./count','w') as f:
-			#	f.write(str(index))
-			#f.close()
+			with open('./count','w') as f:
+				f.write(str(index))
+			f.close()
 			reset_flag = 0
 
 	elif reset_flag == 0:
